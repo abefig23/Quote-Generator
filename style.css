@@ -66,7 +66,12 @@ button {
 }
 
 button:hover {
-    filter: brightness(110%);
+    filter: brightness(130%);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 /* Media Query: tablet or smaller*/
 @media screen and (max-width: 1000px){
