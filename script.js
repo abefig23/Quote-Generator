@@ -8,7 +8,13 @@ let apiQuotes = [];
 
 function newQuote() {
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
-    authorText.textContent = quote.author;
+    
+    if (!quote.author) {
+        authorText.textContent = 'Unkown';
+    } else {
+        authorText.textContent = quote.author;
+    }
+
     quoteText.textContent = quote.text;
 }
 
@@ -23,5 +29,5 @@ async function getQuotes() {
   }
 }
 
-getQuotes();  
+getQuotes();   
 
