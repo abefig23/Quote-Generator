@@ -89,4 +89,13 @@ button:active {
     .quote-text {
         font-size: 2.5rem;
     }
-}
+} 
+
+/* Which will be replaced with this:
+
+// Get Quotes From API
+async function getQuotes() {
+  ...
+  const apiUrl = 'https://jacintodesign.github.io/quotes-api/data/quotes.json';
+  try {
+  ... */

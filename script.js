@@ -15,6 +15,12 @@ function newQuote() {
         authorText.textContent = quote.author;
     }
 
+    if (quote.text.length > 100) {
+        quoteText.classList.add('long-quote');
+    } else {
+        quoteText.classList.remove('long-quote');
+    }
+
     quoteText.textContent = quote.text;
 }
 
@@ -29,5 +35,5 @@ async function getQuotes() {
   }
 }
 
-getQuotes();   
+getQuotes();    
 
